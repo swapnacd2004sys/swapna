@@ -1,0 +1,34 @@
+{% extends "index.html" %}
+{%  load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+{% block content1 %}
+
+        <h1 style="text-align: center;color:wheat;background-color: chocolate;">STUDENT PAGE</h1>
+            <img src="{% static 'assets/img/hero-bg.jpg' %}" alt="" style="height: 700px; width: 100%;" >
+
+{% endblock content1 %}
+   
+{% block content2 %}
+   
+     <table>
+        <tr>
+            <th ><a href="view_teacher_student"> VIEW  TEACHER</a> </th>
+            <th><a href="editstudent">EDIT STUDENT</a></th>
+            <th><a href="logouts">LOGOUT</a></th>
+
+        </tr>
+    </table>
+{% endblock content2 %}
+{% block content3 %}
+
+{% endblock content3 %}
+
+</body>
+</html>

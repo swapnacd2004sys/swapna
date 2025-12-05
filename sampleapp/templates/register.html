@@ -1,0 +1,35 @@
+{% extends "index.html" %}
+{%  load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block content2 %}
+
+    {% endblock content2 %}
+
+  <div style="text-align: center;">
+
+  {% block content1 %}
+  <h1  class="mt-5" style="text-align: center;">REGISTER PAGE</h1>
+
+    <form action="" method="post">
+       {% csrf_token %}
+      <input type="text" name="fname" id="" placeholder="enter your firstname" class="fo" ><br><br>
+      <input type="text" name="lname" id="" placeholder="enter your lastname" ><br><br>
+      <input type="email" name="email" id="" placeholder="enter your email"><br><br>
+      <input type="text" name="address" id="" placeholder="enter your address"><br><br>
+      <input type="number" name="phonenumber" id="" placeholder="enter your phone number"><br><br>
+      <input type="submit" value="submit">
+
+    </form>
+  {% endblock content1 %}
+  
+    </div>
+</body>
+</html>  
+33

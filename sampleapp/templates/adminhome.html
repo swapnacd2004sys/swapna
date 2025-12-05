@@ -1,0 +1,40 @@
+{% extends "index.html" %}
+{%  load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin home</title>
+</head>
+<body>
+{% block content1 %}
+
+        
+    <h1 style="text-align: center;color:wheat ;background-color: chocolate;">WELCOME TO ADMIN HOME</h1>
+   
+    <img src="{% static 'assets/img/hero-bg.jpg' %}" alt="" style="height: 700px; width: 100%;" >
+  
+
+{% endblock content1 %}
+
+{% block content2 %}
+
+    <table>
+        <tr>
+            <th><a  href="tregister">ADD TEACHER</a></th>
+            <th ><a href="View_student_admin">STUDENT</a> </th>
+            <th><a href="view_teacher">VIEW TEACHER</a></th>
+            <th><a href="logouts">LOGOUT</a></th>
+
+        </tr>
+    </table>
+{% endblock content2 %}
+
+{% block content3 %}
+
+{% endblock content3 %}
+
+</body>
+</html>

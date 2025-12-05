@@ -1,0 +1,23 @@
+{% extends "index.html" %}
+{%  load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <!-- <h1>    A SITE FOR STUDENTS AND TEACHERS </h1> -->
+
+   
+{% block content2 %}
+    <a href="{% url 'home' %}">HOME</a>
+    <a href="login">LOGIN</a>
+    <a href="studentregister">REGISTER</a>
+{% endblock content2 %}
+
+</body>
+</html>

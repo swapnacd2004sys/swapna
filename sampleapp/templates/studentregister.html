@@ -1,0 +1,48 @@
+{% extends "home.html" %}
+{%  load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+ 
+{% block content1 %}
+
+   <div class="container mt-5" style="text-align: center;" >
+        <h1 style="text-align: center;color:wheat;background-color: chocolate;">STUDENT REGISTER</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+        <label>FIRSTNAME</label>
+        <input type="text" name="firstname" placeholder="firstname" ><br><br>
+        <label>lastname</label>
+        <input type="text" name="lastname" placeholder="lastname"><br><br>
+        <label>address</label>
+        <input type="text" name="address" placeholder="address"><br><br>
+        <label>email</label>
+        <input type="email" name="email" placeholder="email"><br><br>
+        <label>phonenumber</label>
+        <input type="number" name="phonenumber" placeholder="phonenumber"><br><br>
+         <label>guardian</label>
+        <input type="text" name="guardian" placeholder="guardian"><br><br>
+        <label>username</label>
+        <input type="text" name="username" placeholder="username"><br><br>
+        <label>password</label>
+        <input type="password" name="password" placeholder="password"><br><br>   
+        <!-- <button type="submit"  name="login">REGISTER</button> -->
+                <button type="submit"  name="login" class="btn btn-outline-primary">submit</button>
+
+    </form>
+   </div>
+{% endblock content1 %}
+   
+  {% block content3 %}
+
+  {% endblock content3 %}
+
+</body>
+</html>

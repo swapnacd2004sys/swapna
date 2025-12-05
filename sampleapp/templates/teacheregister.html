@@ -1,0 +1,39 @@
+{% extends "adminhome.html" %}
+{%  load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+  {% block content1 %}
+     <div style="text-align: center;" class="container mt-5">
+
+        <h1 style="text-align: center;color:wheat;background-color: chocolate;">TEACHER REGISTER</h1>
+     <form method="POST">
+        {% csrf_token %}
+        <input type="text" name="firstname" placeholder="firstname" class="form-control"><br>
+        <input type="text" name="lastname" placeholder="lastname" class="form-control"><br>
+        <input type="text" name="address" placeholder="address" class="form-control"><br>
+        <input type="email" name="email" placeholder="email" class="form-control"><br>
+        <input type="number" name="phonenumber" placeholder="phonenumber" class="form-control"><br>
+        <input type="number" name="salary" placeholder="salary" class="form-control"><br>
+        <input type="number" name="experience" placeholder="experience" class="form-control"><br>
+        <input type="text" name="username" placeholder="username" class="form-control"><br>
+        <input type="password" name="password" placeholder="password" class="form-control"><br>
+
+        <button type="submit"  name="submit" class="btn btn-outline-primary">submit</button>
+     </form>
+    </div>
+ {% endblock content1 %}
+   
+   {% block content3 %}
+  {% endblock content3 %}
+
+    
+</body>
+</html>
